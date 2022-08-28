@@ -1,0 +1,144 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #efefef;
+}
+
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.slide-content{
+    overflow: hidden;
+    margin: 0 40px;
+    border-radius: 25px;
+}
+
+.card{
+    border-radius: 35px;
+    background-color: #fff;
+}
+
+.image-content, .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 14px;
+}
+
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4070f4;
+    border-radius: 35px;
+}
+
+
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 3px;
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4070f4;
+}
+
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.descripition{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+.button{
+    border:none;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4070f4;
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.button:hover{
+    background: #265df2 ;
+}
+.nav-btn{
+    color: #4070f4;
+    transition: color 0.3s ease;
+}
+
+.nav-btn:hover{
+    color: #265df2;
+}
+
+.nav-btn::before, .nav-btn::after{
+    font-size: 40px;
+}
+
+.swiper-button-next{
+    right: 0;
+}
+
+.swiper-button-prev{
+    left: 0;
+}
+
+.swiper-pagination.bullet{
+    background-color: #6e93f7;
+    opacity: 1;
+}
+
+.swiper-pagination.bullet-active{
+    background-color: #265df2;
+}
+
+
+
+@media screen and (max-width: 768px){
+   .slide-content{
+    margin: 0 10px;
+   }
+    .nav-btn{
+        display: none;
+    }
+}
