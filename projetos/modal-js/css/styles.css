@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400&family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* PÁGINA INICIAL */
+
+body {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+#open-modal {
+  background-color: #00ffb3;
+  color: black;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  opacity: 0.8;
+  font-size: 15px;
+}
+
+#open-modal:hover {
+  opacity: 1;
+  background-color: #00eca5;
+}
+
+
+/* MODAL */
+
+/* fundo */
+#fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+}
+
+#close-modal {
+  padding: 10px 30px;
+  background-color: rgba(214, 23, 23, 0.808);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  opacity: 0.8;
+  font-size: 15px;
+}
+
+#close-modal:hover {
+  opacity: 1;
+}
+
+
+#modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  max-width: 90%;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 20px;
+  z-index: 10;
+}
+
+
+/* criando eventos para quando os elementos estiverem com opacidade visivel */
+#fade, #modal {
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.modal-body p {
+  margin-bottom: 10px;
+}
+
+
+/* para o site não começar mostrando o modal e tirando os eventos de clique de outros lugares*/
+#modal.hide, #fade.hide {
+  opacity: 0;
+  pointer-events: none; 
+}
+
+#modal.hide {
+  top: 0;
+}
