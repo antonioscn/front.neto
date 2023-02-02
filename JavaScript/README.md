@@ -1,1 +1,2 @@
-Projetos de Estudos em JS
+Projetos realizados durante os estudos em JavaScript
+
