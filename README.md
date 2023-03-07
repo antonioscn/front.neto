@@ -6,4 +6,4 @@ Repositório criado para conter meus projetos de estudos e avanços como desenvo
 
 ### ✨ Deploy de Projetos Desenvolvidos para estudos em geral
   - Cards Responsivos com Js -> [Cards Responsivos](https://cards-rho-tawny.vercel.app/).
-  - Page de Animais -> [Cards Responsivos](https://cards-rho-tawny.vercel.app/).
+ 
