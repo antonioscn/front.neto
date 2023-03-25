@@ -1,7 +1,7 @@
 ## <p align="center">Front.Neto</p>
 
 <p align="center">
-Repositório criado para arnazenar meus projetos de estudos e avanços como desenvolvedor FrontEnd
+Repositório criado para armazenar projetos de estudos em FrontEnd
 
 
 ### ✨ Deploy de Projetos Desenvolvidos para estudos em geral
